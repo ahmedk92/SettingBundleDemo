@@ -13,6 +13,8 @@
 		2831D1A1241C4E2100B81039 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2831D19F241C4E2100B81039 /* Main.storyboard */; };
 		2831D1A3241C4E2400B81039 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2831D1A2241C4E2400B81039 /* Assets.xcassets */; };
 		2831D1A6241C4E2400B81039 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2831D1A4241C4E2400B81039 /* LaunchScreen.storyboard */; };
+		2831D1AE241C4E3200B81039 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2831D1AD241C4E3200B81039 /* Settings.bundle */; };
+		2831D1B2241C512700B81039 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2831D1B1241C512700B81039 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		2831D1A2241C4E2400B81039 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2831D1A5241C4E2400B81039 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2831D1A7241C4E2400B81039 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2831D1AD241C4E3200B81039 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		2831D1AF241C4EF600B81039 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		2831D1B0241C4EF600B81039 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		2831D1B1241C512700B81039 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +62,15 @@
 		2831D198241C4E2100B81039 /* SettingBundleDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2831D1AD241C4E3200B81039 /* Settings.bundle */,
+				2831D1A7241C4E2400B81039 /* Info.plist */,
 				2831D199241C4E2100B81039 /* AppDelegate.swift */,
+				2831D1B1241C512700B81039 /* main.swift */,
 				2831D19B241C4E2100B81039 /* SceneDelegate.swift */,
 				2831D19D241C4E2100B81039 /* ViewController.swift */,
-				2831D19F241C4E2100B81039 /* Main.storyboard */,
 				2831D1A2241C4E2400B81039 /* Assets.xcassets */,
 				2831D1A4241C4E2400B81039 /* LaunchScreen.storyboard */,
-				2831D1A7241C4E2400B81039 /* Info.plist */,
+				2831D19F241C4E2100B81039 /* Main.storyboard */,
 			);
 			path = SettingBundleDemo;
 			sourceTree = "<group>";
@@ -109,6 +117,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = 2831D18D241C4E2100B81039;
 			productRefGroup = 2831D197241C4E2100B81039 /* Products */;
@@ -125,6 +134,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2831D1AE241C4E3200B81039 /* Settings.bundle in Resources */,
 				2831D1A6241C4E2400B81039 /* LaunchScreen.storyboard in Resources */,
 				2831D1A3241C4E2400B81039 /* Assets.xcassets in Resources */,
 				2831D1A1241C4E2100B81039 /* Main.storyboard in Resources */,
@@ -140,6 +150,7 @@
 			files = (
 				2831D19E241C4E2100B81039 /* ViewController.swift in Sources */,
 				2831D19A241C4E2100B81039 /* AppDelegate.swift in Sources */,
+				2831D1B2241C512700B81039 /* main.swift in Sources */,
 				2831D19C241C4E2100B81039 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,6 +162,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				2831D1A0241C4E2100B81039 /* Base */,
+				2831D1AF241C4EF600B81039 /* ar */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -159,6 +171,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				2831D1A5241C4E2400B81039 /* Base */,
+				2831D1B0241C4EF600B81039 /* ar */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -170,6 +183,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -230,6 +244,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
